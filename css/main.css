@@ -149,16 +149,16 @@ padding-left: 2vw;
 #v-pills-history{
 
 }
-#v-pills-thanks{
+#v-pills-thanks>.red-cursor{
 top: 9vw;
 }
-#v-pills-aim{
+#v-pills-aim>p>.red-cursor{
 top: 18vw
 }
-#v-pills-clinic{
+#v-pills-clinic>p>.red-cursor{
 top: 27vw
 }
-#v-pills-partners{
+#v-pills-partners>.red-cursor{
 top: 36vw
 }
 .thanks-ul>li{

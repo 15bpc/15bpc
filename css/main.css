@@ -91,8 +91,6 @@ color: black;
   height:155vw;
 }
 .tab-links{
-  padding-right: 15px;
-  padding-left: 15px;
   width: 100px;
 }
 .tab-content{
@@ -182,5 +180,15 @@ color: white;
 #carouselExampleControls{
   position: relative;
   top: 2px;
+}
+.left-menu{
+  position: relative;
+  padding-bottom: 35vw;
+}
+.left-menu>img{
+  text-align: left;
+  position:absolute;
+  bottom: 0vw;
+  right: 0px;
 }
 

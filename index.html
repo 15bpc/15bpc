@@ -54,7 +54,7 @@
 </div>
      <div class="row mx-0 align-middle mb-4 px-3">
      <div class=" col col-md-12 col-lg-12 col-xl-12 align-items-center pr-0 pl-0">
-       <img class="img-fluid" id="#ourdream" src="img/dream.png" alt="">
+       <img class="img-fluid" id="ourdream" src="img/dream.png" alt="">
      </div>
    </div>
     <div class="row align-middle site-header clinic-img mb-4 mx-0 px-3 row" id="startReading">
@@ -189,7 +189,9 @@
   <script>
     $(function(){
 $('.btn-play').one('click', function(e){
-  $('html,body').stop().animate({ scrollTop: $('#startReading').offset().top }, 5000);
+  $('html,body').animate({ scrollTop: $('#ourdream').offset().top }, 1000)
+                .delay(1000)
+                .animate({ scrollTop: $('#startReading').offset().top }, 1000);
   e.preventDefault();
 });
 

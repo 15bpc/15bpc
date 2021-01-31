@@ -160,6 +160,9 @@ top: 27vw
 #v-pills-partners>.red-cursor{
 top: 36vw
 }
+#v-pills-aim>p{
+text-transform: none;
+}
 .thanks-ul>li{
   position: relative;
   right: 40px;

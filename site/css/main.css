@@ -1,0 +1,219 @@
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+  @font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-style: normal;
+  }
+
+  body {
+      font-family: 'OpenSans';
+      text-transform: lowercase;
+      list-style: none;
+        font-size: 4vw;
+}
+
+/*ПЕРВАЯ СТРОКА*/
+.header-text-row{
+   height: 5%;
+}
+.site-header-1{
+text-align: center;
+letter-spacing: 0.5vw;
+color: gray;
+}
+.site-header-1>.head-clin-text{
+  color: red;
+  background-color: none;
+}
+.site-header-2{
+text-align: center;
+//*letter-spacing: 0.85vw;*//
+color: black;
+}
+.site-header-2>.head-clin-text{
+  background-color: red;
+  color: white;
+  position: relative;
+}
+/*ГЛАВНОЕ ФОТО*/
+.main-img{
+  border-bottom: 4px solid gray;
+}
+
+/*ПЛЕЕР*/
+.progress {
+  height: 3px;
+}
+
+.audio-player {
+  width: 100%;
+  > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+      border-bottom-left-radius: 0;
+  }
+  > .btn:last-child:not(:first-child), 
+  > .dropdown-toggle:not(:first-child) {
+    border-bottom-right-radius: 0;
+  }
+  .btn-secondary:focus {
+    box-shadow: none;
+  }
+}
+
+
+/*РИСУНОК КЛИНИКИ*/
+.clinic-img{
+  height: 15%;
+}
+
+/**/
+
+/*ИНФО*/
+.height-7001{
+  height:155vw;
+}
+.tab-links{
+  width: 100px;
+}
+.tab-content{
+    border-left: 1px solid gray;
+    padding-left: 2vw;
+    height: 100%;
+}
+.tab-link{
+  box-sizing: border-box;
+  font-size: 4vw;
+  border: none;
+  color: black;
+  border-radius: 0px;
+  padding:0px;
+  margin: 0px;
+  line-height: 9vw;
+}
+
+.tab-pane{
+height: 100%;
+position: relative;
+padding-left: 2vw;
+}
+.red-cursor{
+  position: absolute;
+  left: -2.9vw;
+  color: red;
+  font-size: 5.9vw;
+}
+#v-pills-thanks>p>span{
+
+}
+#v-pills-aim>p>span{
+}
+#v-pills-clinic>p>span{
+}
+#v-pills-partners>p>span{
+}
+.tab-link:hover{
+  color: #3F5866;
+   text-decoration: none;
+}
+.tab-link:hover i{
+  color: #4A7DBF;
+}
+.tab-link.active{
+  color: red;
+  background-color: white;
+}
+.tab-link a{
+  text-decoration: none;
+}
+/*Инфо*/
+#v-pills-history{
+
+}
+#v-pills-thanks>.red-cursor{
+top: 9vw;
+}
+#v-pills-aim>p>.red-cursor{
+top: 18vw
+}
+#v-pills-clinic>.red-cursor{
+top: 27vw
+}
+#v-pills-partners>.red-cursor{
+top: 36vw
+}
+#v-pills-aim>p{
+text-transform: none;
+}
+.thanks-ul>li{
+  position: relative;
+  right: 40px;
+  list-style: none;
+  text-transform: none; 
+}
+.clin-ul>li{
+  position: relative;
+  right: 40px;
+  list-style: none;
+}
+ /*ТЕКСТ*/
+ .font-cabin{
+   font-family: Cabin, sans-serif;
+ }
+ .gray-header{
+   color: #2f3f50;
+ }
+ .lh-2{
+   line-height: 2em;
+ }
+.footer-1{
+  text-align: center;
+background-color: gray;
+color: white;
+}
+#carouselExampleControls{
+  position: relative;
+  top: 2px;
+}
+.left-menu{
+  position: relative;
+  padding-bottom: 35vw;
+}
+.left-menu>img{
+  text-align: left;
+  position:absolute;
+  bottom: 0vw;
+  right: 0px;
+}
+.vlkz{
+  text-align: left;
+display: inline-block;
+width:38%;
+letter-spacing: 0.7vw;
+}
+.clinika{
+    text-align: right;
+display: inline-block;
+width:62%;
+color: white;
+background-color: red;
+letter-spacing: 0.7vw;
+}

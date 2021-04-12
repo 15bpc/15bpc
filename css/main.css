@@ -108,12 +108,12 @@ color: black;
 }
 .tab-link{
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 3.5vh;
   border: none;
   border-radius: 0px;
   padding:0px;
   margin: 0px;
-  line-height: 150%;
+  line-height: 5.3vh;
   width: auto;
   font-weight: 900;
 }
@@ -152,9 +152,9 @@ height: 55%;
 }
 .lstuff>div{
    transform: rotate(-90deg);
-   font-size: 12vh;
+   font-size: 10vh;
    position: relative;
-   top: 70%;
+   bottom: -30vh;
    font-weight: bold;
 }
 

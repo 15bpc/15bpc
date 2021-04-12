@@ -26,7 +26,7 @@
   	<div class="row">
   	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0">
     <div class=" align-middle site-header clinic-img mb-3 mx-0 px-3  text-center" id="startReading">
-		<img class="img-fluid mb-1" src="img/head.png" alt=""></div>
+		<img class="img-fluid mb-1" style="max-height: 150px" src="img/head.png" alt=""></div>
       
               <div class=" align-middle text-left mb-4 mx-0 px-3 " id="tabMenu">
         <div class="nav flex-column tab" aria-orientation="vertical">
@@ -53,7 +53,7 @@
                    <div class="col-8 col-sm-8 col-lg-5 col-xl-5 tab-cont">
                      <div class=" mr-0 ml-0 align-middle">
                      
-                        <img class="img-fluid main-img" src="img/photo.png" alt="">
+                        <img class="img-fluid main-img"  src="img/photo.png" alt="">
                        <div  class=" col container-fluid pr-10 "><p class="text-right mb-0">феликс тамаев_кардиолог</p>
                         <p class="text-right pl-15 pr-15 mb-0">instagram: <a style="color:red;" href="https://www.instagram.com/doc.tamaev/">doc.tamaev</a></p></div> 
                       
@@ -123,18 +123,7 @@
                         <!-- Кнопка запуска модального окна -->
                         <img class="img-fluid pb-5" src="img/synergy.jpg" alt="" data-toggle="modal" data-target="#myModal">
               
-              <!-- Модальное окно -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-              
-                    <img class="img-fluid " src="img/synergy.jpg" alt="">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                </div>
-              </div>
+
         </div>                
                 
                       </div>      
@@ -145,22 +134,11 @@
         <div class=" tabcontent" id="helping">
  <div class=" mr-0 ml-0 mb-1 pb-3 ">
                 <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 lstuff"><div>помощь</div></div>
-                   <div class="col-8 col-sm-8 tab-cont">  
+                   <div class="col-8 col-sm-8 tab-cont text-right ">  
 
   	                        <!-- Кнопка запуска модального окна -->
-              <button type="button" class="btn footer-1" data-toggle="modal" data-target="#donate">Пожертвовать</button>
-              <!-- Модальное окно -->
-              <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-              <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2&targets-hint=&default-sum=&button-text=14&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=41001749432231" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-                          <button type="button" class="close" style="position: absolute; left: 95%; bottom: 215px; width: 15px; height: 10px" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-
-  </div>
-  </div>                   
+              <button type="button" class="btn oplata" data-toggle="modal" data-target="#donate">ОПЛАТА</button>
+                   
         </div>  
                      </div>
                       </div>
@@ -215,7 +193,33 @@
             
       </div>
 
+              <!-- Модальное окно картинка -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+              
+                    <img class="img-fluid " src="img/synergy.jpg" alt="">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                </div>
+              </div>
 
+
+
+                            <!-- Модальное окно оплата -->
+              <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+              <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2&targets-hint=&default-sum=&button-text=14&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=41001749432231" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                          <button type="button" class="close" style="position: absolute; left: 95%; bottom: 215px; width: 15px; height: 10px" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+
+  </div>
+  </div>    
 
 
 </div>

@@ -23,35 +23,40 @@
 <body>
 
   <div class="container-fluid align-middle " id="main_container" style="padding:0;">
-
-    <div class="  row align-middle site-header clinic-img mb-4 mx-0 px-3 row text-center" id="startReading">
-      <div class="class= col-md-12 col-lg-12 col-xl-12 pr-0 pl-0">
-      <img class="img-fluid mb-1 " src="img/head.png" alt=""></div>
-    </div>
-        <div class="  row align-middle  mb-4 mx-0 px-3 " >
-        <div class="nav flex-column " id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="tab-link  " id="v-pills-build-tab" data-toggle="pill" href="#v-pills-build" role="tab" aria-controls="v-pills-build" aria-selected="true"><span>строим</span><span> клинику</span></a>
-          <a class="tab-link" id="v-pills-partners-tab" data-toggle="pill" href="#v-pills-partners" role="tab" aria-controls="v-pills-partners" aria-selected="false"><span>партнеры</span></a>
-          <a class="tab-link" id="v-pills-help-tab" data-toggle="pill" href="#v-pills-help" role="tab" aria-controls="v-pills-help" aria-selected="false"><span>ваша</span><span> помощь</span></a>
-          <a class="tab-link" id="v-pills-thanks-tab" data-toggle="pill" href="#v-pills-thanks" role="tab" aria-controls="v-pills-thanks" aria-selected="false"><span>спасибо</span></a>
+  	<div class="row">
+  	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0">
+    <div class=" align-middle site-header clinic-img mb-3 mx-0 px-3  text-center" id="startReading">
+		<img class="img-fluid mb-1" src="img/head.png" alt=""></div>
+      
+              <div class=" align-middle text-left mb-4 mx-0 px-3 " id="tabMenu">
+        <div class="nav flex-column tab" aria-orientation="vertical">
+          <a class="tab-link tablinks" onclick="openTab(event, 'build')"><span>строим</span><span> клинику</span></a>
+          <a class="tab-link tablinks" onclick="openTab(event, 'partners')"><span>партнеры</span></a>
+          <a class="tab-link tablinks" onclick="openTab(event, 'helping')"><span>ваша</span><span> помощь</span></a>
+          <a class="tab-link tablinks" onclick="openTab(event, 'thanks')"><span>спасибо</span></a>
         </div>
-    </div>
+    </div></div>
+
+
+   
 
 
 
+  	<div class="class= col-md-12 col-lg-7 col-xl-7 col-sm-12 col-12 pr-0 pl-0">
+        <div class="alltabs" >
 
 
-        <div class="tab-content" id="v-pills-tabContent">
-          <div class="tab-pane fade  text-left " id="v-pills-build" role="tabpanel" aria-labelledby="v-pills-build-tab">
-             <div class="row height-700 mr-0 ml-0 mb-1 pb-3">
-                <div class="col-4 col-sm-4 tab-links text-right left-menu px-3 lstuff"><div>строим</div></div>
-                   <div class="col-8 col-sm-8">
-                     <div class="row mr-0 ml-0 align-middle">
-                      <div class=" col container-fluid col-md-12 col-lg-12 col-xl-12 align-items-center text-center pr-0 pl-0">
+
+          <div class="text-left tabcontent" id="build" >
+
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 lstuff"><div>строим</div></div>
+                   <div class="col-8 col-sm-8 col-lg-5 col-xl-5 tab-cont">
+                     <div class=" mr-0 ml-0 align-middle">
+                     
                         <img class="img-fluid main-img" src="img/photo.png" alt="">
                        <div  class=" col container-fluid pr-10 "><p class="text-right mb-0">феликс тамаев_кардиолог</p>
                         <p class="text-right pl-15 pr-15 mb-0">instagram: <a style="color:red;" href="https://www.instagram.com/doc.tamaev/">doc.tamaev</a></p></div> 
-                      </div>
+                      
                     </div>
 
                       <div class="container-fluid mb-4  py-4 mx-0" >
@@ -103,13 +108,18 @@
     </a>
   </div>
           </div>
-           </div>
+
             </div>
 
-        <div class="tab-pane fade " id="v-pills-partners" role="tabpanel" aria-labelledby="v-pills-partners-tab">
-             <div class="row height-700 mr-0 ml-0 mb-1 pb-3">
-                <div class="col-4 col-sm-4 tab-links text-right left-menu px-3 lstuff"><div>партнеры</div></div>
-                   <div class="col-8 col-sm-8">
+
+
+
+
+        <div class=" tabcontent" id="partners" >
+     
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2  tab-links text-right px-3 lstuff"><div>партнеры</div></div>
+                 <div class="col-4 col-sm-4 col-md-3 col-lg-3 col-xl-3"></div>
+                   <div class="col-8 col-sm-8 tab-cont">
                         <!-- Кнопка запуска модального окна -->
                         <img class="img-fluid pb-5" src="img/synergy.jpg" alt="" data-toggle="modal" data-target="#myModal">
               
@@ -126,20 +136,43 @@
                 </div>
               </div>
         </div>                
-                     </div>
+                
                       </div>      
 
-        <div class="tab-pane fade " id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">
- <div class="row height-700 mr-0 ml-0 mb-1 pb-3 ">
-                <div class="col-4 col-sm-4 tab-links text-right left-menu px-3 lstuff"><div>помощь</div></div>
-                   <div class="col-8 col-sm-8">                     
+
+
+
+        <div class=" tabcontent" id="helping">
+ <div class=" mr-0 ml-0 mb-1 pb-3 ">
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 lstuff"><div>помощь</div></div>
+                   <div class="col-8 col-sm-8 tab-cont">  
+
+  	                        <!-- Кнопка запуска модального окна -->
+              <button type="button" class="btn footer-1" data-toggle="modal" data-target="#donate">Пожертвовать</button>
+              <!-- Модальное окно -->
+              <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+              <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2&targets-hint=&default-sum=&button-text=14&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=41001749432231" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
+                          <button type="button" class="close" style="position: absolute; left: 95%; bottom: 215px; width: 15px; height: 10px" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+
+  </div>
+  </div>                   
         </div>  
                      </div>
                       </div>
-        <div class="tab-pane fade " id="v-pills-thanks" role="tabpanel" aria-labelledby="v-pills-thanks-tab">
-           <div class="row height-700 mr-0 ml-0 mb-1 pb-3 ">
-                <div class="col-4 col-sm-4 tab-links text-right left-menu px-3 lstuff"><div>спасибо</div></div>
-                   <div class="col-8 col-sm-8">
+
+
+
+
+
+        <div class=" tabcontent" id="thanks">
+           <div class=" mr-0 ml-0 mb-1 pb-3 ">
+                <div class="col-4 col-sm-4 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 lstuff"><div>спасибо</div></div>
+                   <div class="col-8 col-sm-8 tab-cont">
                              <ul class="thanks-ul">
                               <li>Айдаровым</li>
                               <li>Абаевой</li>
@@ -176,37 +209,26 @@
          
                      </div>
                       </div>
+
+
+
             
       </div>
-       <div class="row pl-0 mx-0">
-  <div class="class= col-md-12 col-lg-12 col-xl-12  px-0">
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A63157add400f754fd5c8d0d2c628e789d039ebd3cead0391ce4271c5f5eb9a53&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+
+
+
+</div>
+</div>  
+</div>    
+ <div class="row pl-0 mx-0">
+  <div class="class= col-md-12 col-lg-12 col-xl-12 text-center px-0 mx-0 tabcontent" id="map">
+<img class="img-fluid main-img" src="img/location.jpg" alt="">
      </div>
   </div>
-<div class="row pl-0 mx-0">
-  <div class="class= col-md-12 col-lg-12 col-xl-12  px-0">
-  	                        <!-- Кнопка запуска модального окна -->
-              <button type="button" class="btn footer-1" data-toggle="modal" data-target="#donate">Пожертвовать</button>
-              <!-- Модальное окно -->
-              <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-              <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2%20%D0%A2%D0%95%D0%A1%D0%A2&targets-hint=&default-sum=10000&button-text=14&payment-type-choice=on&hint=&successURL=&quickpay=shop&account=41001749432231" width="423" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                </div>
-              </div>
-
-  </div>
-  </div>
-
-
-  
   <div class="row pl-0 mx-0">
-  <div class="class= col-md-12 col-lg-12 col-xl-12  px-0">
-    <span class="footer-1">15bpc@mail.ru</span> <i class="fas fa-map-marker-alt"></i>
+  <div class="class= col-md-12 col-lg-12 col-xl-12  px-0 footer-1">
+   <a href="mailto:15bpc@mail.ru"> <span class="">15bpc@mail</span> <span>ru</span></a> <i class="fas fa-map-marker-alt tablinks "onclick="openTab(event, 'map')"></i>
      </div>
   </div>
 </div>
@@ -376,6 +398,28 @@ axe.run( function( err, results ) {
   console.log( results.violations );
 } );
   </script>
+  <script>
+  	function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById("startReading").style['margin-top'] = "0%";
+	document.getElementById("tabMenu").style.bottom = "15%";
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+
+ 	
+
+}</script>
   <script src="js/bootstrap.bundle.min.js" defer></script>
  
 </body>

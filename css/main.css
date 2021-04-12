@@ -152,7 +152,7 @@ height: 55%;
 }
 .lstuff>div{
    transform: rotate(-90deg);
-   font-size: 70px;
+   font-size: 12vh;
    position: relative;
    top: 70%;
    font-weight: bold;
@@ -205,7 +205,7 @@ text-transform: none;
 
   width: auto;
   font-size: 20px;
-  position: absolute;
+  position: fixed;
   bottom: 1%;
   height: 5%;
 }

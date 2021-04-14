@@ -132,7 +132,7 @@ padding-left: 2vw;
 .tab-cont{
   overflow-y: auto;
 overflow-x: hidden;
-left: 30%;
+left: 33.5%;
 height: 55%;
   bottom: 6%;
   position: fixed;
@@ -206,7 +206,7 @@ text-transform: none;
   width: auto;
   font-size: 25px;
   position: fixed;
-  bottom: 1%;
+  bottom: 2%;
   left:3vw;
   height: 5%;
 }
@@ -269,4 +269,12 @@ text-decoration: none;
   position: fixed;
 }
 
+.text-block{
+    color: white;
+  background-color: #212125;
+  margin-left: 3px;
+  font-size: 25px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 

@@ -152,7 +152,7 @@ height: 55%;
 }
 .lstuff>div{
    transform: rotate(-90deg);
-   font-size: 10vh;
+   font-size: 9vh;
    position: relative;
    bottom: -30vh;
    font-weight: bold;
@@ -204,9 +204,10 @@ text-transform: none;
 .footer-1{
 
   width: auto;
-  font-size: 20px;
+  font-size: 25px;
   position: fixed;
   bottom: 1%;
+  left:3vw;
   height: 5%;
 }
 .footer-1>a{
@@ -267,4 +268,5 @@ text-decoration: none;
   bottom: 6%;
   position: fixed;
 }
+
 

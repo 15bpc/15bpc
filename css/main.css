@@ -310,9 +310,9 @@ box-sizing: border-box;
     display: none;
 }
 .side-panel {
-    position: absolute;
+    position: fixed;
     z-index: 999999;
-    top: 0;
+    bottom: 0;
     right: -100vw;
     background-color: #f0c900;
     transition: all 0.5s;   
@@ -378,7 +378,7 @@ box-sizing: border-box;
     display: block;
 }
 #side-checkbox:checked + .side-panel {
-    right: -2vw;
+    right: 0vw;
 }
 #side-checkbox-1:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
     display: none;
@@ -387,7 +387,7 @@ box-sizing: border-box;
     display: block;
 }
 #side-checkbox-1:checked + .side-panel {
-    right: -2vw;
+    right: 0vw;
 }
 
 /* Оформление кнопки на панеле */

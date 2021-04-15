@@ -24,7 +24,7 @@
 
   <div class="container-fluid align-middle " id="main_container" style="padding:0;">
   	<div class="row mx-0">
-  	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0" id="sitehead">
+  	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0" style="max-height: 44vh; box-sizing: border-box;" id="sitehead">
     <div class=" align-middle site-header clinic-img mb-3 mx-0 px-3  text-center" id="startReading">
 		<img class="img-fluid mb-1" style="max-height: 25vh" src="img/head.png" alt="" onclick="openTab(event, 'closeAll')"></div>
       
@@ -42,18 +42,18 @@
 
 
 
-  	<div class="class= col-md-12 col-lg-8 col-xl-8 col-sm-12 col-12 pr-0 pl-0">
+  	<div class=" col-md-12 col-lg-8 col-xl-8 col-sm-12 col-12 pr-0 pl-0" >
         <div class="alltabs" >
 
 
 
           <div class="text-left tabcontent pt-1" id="build" >
-            <div class="row mr-0 ml-0">
+            <div class="row mr-0 ml-0" >
                 <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>строим</div></div>
                    <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-center">
 
                         <img class="img-fluid main-img"  src="img/photo.png" alt="">
-                       <div  class=" "><span class="text-center text-block mb-0">феликс тамаев</span><span class="text-block"><i class="fas fa-volume-up"></i></span>
+                       <div  class=" "><span class="text-center text-block mb-0">феликс тамаев</span><span class="text-block btn-play"><span title="Play" class="fa fa-play aligned"></span></i></span>
                        	<p class="text-left mb-0">врач-кардиолог</p>
                         <p class="text-right pl-15 pr-15 mb-0 inst"><a  href="https://www.instagram.com/doc.tamaev/">@doc.tamaev</a></p></div> 
                        <div class="container-fluid mb-4  py-4 mx-0" >
@@ -63,7 +63,7 @@
                           </audio>
                           <div class="btn-group audio-player align-middle" role="group" aria-label="Audio Player">
                             <button class="btn btn-back-5"><span title="-5 seconds" class="fa fa-fast-backward aligned"></span></button>
-                            <button class="btn btn-play" ><span title="Play" class="fa fa-play aligned"></span></button>
+                            <button class="btn " ><span title="Play" class="fa fa-play aligned"></span></button>
                             <button class="btn btn-forward-5"><span title="+5 seconds" class="fa fa-fast-forward aligned"></span></button>     
                           </div>
                           <div class="progress">
@@ -112,7 +112,7 @@
 
 
 
-        <div class=" tabcontent pt-1" id="partners" >
+        <div class=" tabcontent pt-1" style="position: absolute; top: 0" id="partners" >
         	   <div class="row mr-0 ml-0">
                 <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div style="font-size: 7vh;">партнеры</div></div>
  
@@ -129,7 +129,7 @@
 
 
 
-        <div class=" tabcontent pt-1" id="helping">
+        <div class=" tabcontent pt-1" style="position: absolute; top: 0" id="helping">
  <div class="row mx-0 mb-1 ">
                 <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>помощь</div></div>
               <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-right"> 
@@ -260,16 +260,14 @@
 
 </div>
 </div>  
-</div>    
-
   <div class="row pl-0 mx-0 align-middle" id="foots">
   <div class="class= col-md-12 col-lg-12 col-xl-12  text-center px-0 footer-1">
    <a href="mailto:15bpc@mail.ru"> <span class="">15bpc@mail</span> <span class="">ru</span></a> <i class="fas fa-map-marker-alt tablinks"  onclick="openTab(event, 'map')"></i>
      </div>
-
-
-
   </div>
+</div>    
+
+
 </div>
   <script src="js/jquery-3.5.1.min.js"></script>
 
@@ -454,7 +452,6 @@ tabcontent = document.getElementsByClassName("tabcontent");
     document.getElementById("startReading").style['margin-top'] = "20%";
 	document.getElementById("tabMenu").style.bottom = "0%";
 	   document.getElementById("foots").style.display = "block";
-	console.log('111')
 }
     	else{
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -472,7 +469,6 @@ tabcontent = document.getElementsByClassName("tabcontent");
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
     document.getElementById("foots").style.display = "none";
-console.log('222')
  	}
 
 }</script>

@@ -26,7 +26,7 @@
   	<div class="row mx-0">
   	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0" id="sitehead">
     <div class=" align-middle site-header clinic-img mb-3 mx-0 px-3  text-center" id="startReading">
-		<img class="img-fluid mb-1" style="max-height: 25vh" src="img/head.png" alt=""></div>
+		<img class="img-fluid mb-1" style="max-height: 25vh" src="img/head.png" alt="" onclick="openTab(event, 'closeAll')"></div>
       
               <div class=" align-middle text-left mb-4 mx-0 px-3 " id="tabMenu">
         <div class="nav flex-column tab" aria-orientation="vertical">
@@ -53,8 +53,9 @@
                    <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-center">
 
                         <img class="img-fluid main-img"  src="img/photo.png" alt="">
-                       <div  class=" col container-fluid pr-10 "><p class="text-right mb-0">феликс тамаев_кардиолог</p>
-                        <p class="text-right pl-15 pr-15 mb-0">instagram: <a style="color:red;" href="https://www.instagram.com/doc.tamaev/">doc.tamaev</a></p></div> 
+                       <div  class=" "><span class="text-center text-block mb-0">феликс тамаев</span><span class="text-block"><i class="fas fa-volume-up"></i></span>
+                       	<p class="text-left mb-0">врач-кардиолог</p>
+                        <p class="text-right pl-15 pr-15 mb-0 inst"><a  href="https://www.instagram.com/doc.tamaev/">@doc.tamaev</a></p></div> 
                        <div class="container-fluid mb-4  py-4 mx-0" >
                         <div class=" container-fluid align-middle mx-0" >
                           <audio crossorigin preload="auto">
@@ -119,7 +120,7 @@
 
                         <img class="img-fluid" style="max-height: 80%" src="img/lolaev.png" alt=""> <br>
 
-                        <span class="text-block">Иосиф Лолаев</span><span class="text-block"><i class="fas fa-volume-up"></span></i>
+                        <span class="text-block">Иосиф Лолаев</span><span class="text-block"><i class="fas fa-volume-up"></i></span>
               			</div>
  </div> 
         </div>                    
@@ -132,12 +133,50 @@
  <div class="row mx-0 mb-1 ">
                 <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>помощь</div></div>
               <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-right"> 
-
-  	                        <!-- Кнопка запуска модального окна -->
-  	                        <span class="text-block">карта</span><span class="text-block">СБЕР</span><br>
-  	                        <span class="text-block">банковский</span><span class="text-block">счет</span><br>
+				<input type="checkbox" id="side-checkbox" />
+				<div class="side-panel text-right">
+				    <label class="side-button-2 text-right" for="side-checkbox">+</label>    
+				    <div class="side-title"><span class="text-block" >4274</span><span class="text-block">3200</span><span class="text-block">6651</span><span class="text-block">4269</span></div>
+				     <span class="text-block" style="position: relative; top:35vh;"> </span><span class="text-block" style="position: relative; top:35vh;">оплатить</span>
+				</div>
+				<div class="side-button-1-wr text-right">
+				    <label class="side-button-1 " for="side-checkbox">
+				        <div class="side-b side-open"><span class="text-block side-b side-open" >карта</span><span class="text-block side-b side-open">СБЕР</span></div>
+				        
+				        <div class="side-b side-close text-block">Закрыть</div>
+				    </label>
+				</div>
+ 							
+						<input type="checkbox" id="side-checkbox-1" />
+						<div class="side-panel">
+						    <label class="side-button-2" for="side-checkbox-1">+</label>    
+						    <p style="font-size: 2.5vh; line-height: 3vh;">
+						    	Расчетный счет для добровольных пожертвований на строительство клиники гипертонии <br>
+						    	ООО "Диакор" <br>
+						    	ИНН 1501034563 <br>
+						    	КПП 151501001<br>
+						    	ОГРН 102150508017<br>
+						    	Филиал "Центральный" банка ВТБ (ПАО) г.Москва<br>
+						    	р/счет 40702810700220001994 <br>
+						    	БИК 044525411<br>
+						    	к/с 30101810145250000411<br>
+						    	Юр. адрес: г.Владикавказ, ул Коцоева, 93 (он же фактический).<br>
+						    </p>
+						       <span class="text-block"> </span><span class="text-block">оплатить</span>
+						</div>
+						<div class="side-button-1-wr text-right">
+						    <label class="side-button-1 " for="side-checkbox-1">
+						        <div class="side-b side-open"><span class="text-block">банковский</span><span class="text-block">счет</span></div>
+						        <div class="side-b side-close text-block">Закрыть</div>
+						    </label>
+						</div>
+  	                     
   	                        <span>для добровольных <br> пожертвований <br> на строительство <br> клиники гипертонии</span> <br>
-              <button type="button" class="btn oplata" data-toggle="modal" data-target="#donate">ОПЛАТА</button>
+
+
+
+                      <!-- Кнопка запуска модального окна -->
+                      <button type="button" class="btn " data-toggle="modal" data-target="#donate"><span class="text-block"> </span><span class="text-block">оплатить</span></button>
                    
         </div>  
                      </div>
@@ -192,8 +231,8 @@
 
                               <div class=" tabcontent pt-1" id="map">
  <div class="row pl-0 mx-0">
-  <div class="class= col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 text-center px-0 mx-0" >
-<img class="img-fluid map-img" src="img/location.jpg" alt="">
+  <div class="class= col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 text-center px-0 mx-0 map-block" >
+<!--<img class="img-fluid map-img" src="img/location.jpg" alt="">-->
      </div>
   </div>
                       </div>
@@ -223,9 +262,9 @@
 </div>  
 </div>    
 
-  <div class="row pl-0 mx-0 align-middle">
+  <div class="row pl-0 mx-0 align-middle" id="foots">
   <div class="class= col-md-12 col-lg-12 col-xl-12  text-center px-0 footer-1">
-   <a href="mailto:15bpc@mail.ru"> <span class="">15bpc@mail</span> <span class="">ru</span></a> <i class="fas fa-map-marker-alt tablinks" style="font-size: 25px; " onclick="openTab(event, 'map')"></i>
+   <a href="mailto:15bpc@mail.ru"> <span class="">15bpc@mail</span> <span class="">ru</span></a> <i class="fas fa-map-marker-alt tablinks"  onclick="openTab(event, 'map')"></i>
      </div>
 
 
@@ -402,12 +441,27 @@ axe.run( function( err, results ) {
   <script>
   	function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
-
+if (tabName=="closeAll") {
+tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById("startReading").style['margin-top'] = "20%";
+	document.getElementById("tabMenu").style.bottom = "0%";
+	   document.getElementById("foots").style.display = "block";
+	console.log('111')
+}
+    	else{
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
-
+    
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
@@ -417,8 +471,9 @@ axe.run( function( err, results ) {
 
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-
- 	
+    document.getElementById("foots").style.display = "none";
+console.log('222')
+ 	}
 
 }</script>
   <script src="js/bootstrap.bundle.min.js" defer></script>

@@ -42,18 +42,24 @@ html {
   margin-top: 20%;
 }
 
-.header-text-row{
-   height: 5%;
-}
 #sitehead{
 height:auto;
 margin-bottom: -9vh;
 }
-/*ГЛАВНОЕ ФОТО*/
+/*ГЛАВНОЕ ФОТО
 .map-img{
   max-height: 55vh;
 }
-
+*/
+#map{
+    height: 52vh;
+}
+.map-block{
+  background-image: url(../img/location.jpg);
+  height: 52vh;
+background-position: center;
+background-size: contain;
+}
 /*ПЛЕЕР*/
 .progress {
   height: 3px;
@@ -114,7 +120,7 @@ padding-left: 2vw;
 .tab-cont{
   overflow-y: auto;
 overflow-x: hidden;
-height: 55vh;
+height: 56vh;
 }
 
 #tabMenu{
@@ -125,7 +131,7 @@ height: 55vh;
 .lstuff{
   color: white;
   background-color: #212125;
-height: 55vh;
+height: 56vh;
 overflow-y: hidden;
 
 }
@@ -133,16 +139,15 @@ overflow-y: hidden;
    transform: rotate(-90deg);
    font-size: 9vh;
    position: relative;
-   bottom:-30vh;
+   bottom:-33vh;
+   right: 1vw;
    font-weight: bold;
+   line-height: 9vh;
 }
 
 .tab-link:hover{
-  color: #3F5866;
+  color: white;
    text-decoration: none;
-}
-.tab-link:hover i{
-  color: #4A7DBF;
 }
 /*.tab-link.active{
   color: white;
@@ -164,6 +169,18 @@ height: 90vh;
 }
 
   
+}
+
+
+.inst{
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 70vw;
+  left: 52vw;
+ 
+}
+.inst>a{
+   color: #212125;
 }
 /*Инфо*/
 #v-pills-history{
@@ -196,10 +213,10 @@ text-transform: none;
 .footer-1{
 
   width: auto;
-  font-size: 25px;
-  position: fixed;
-  bottom: 2%;
-  left:3vw;
+  font-size: 7vw;
+  position: absolute;
+  bottom: 3%;
+  left:4.5vw;
   height: 5%;
 }
 .footer-1>a{
@@ -208,9 +225,13 @@ text-decoration: none;
 
   }
 .footer-1>a>span{
-  text-align: left;
+  text-align: right;
   color: white;
   background-color: #212125;
+  }
+  .footer-1>i{
+font-size: 25px;
+  cursor:pointer;
   }
 #carouselExampleControls{
   position: relative;
@@ -244,7 +265,7 @@ text-decoration: none;
 
 
 .tab a:hover {
-    background-color: #FFEB3B;
+    background-color: #212125;
 }
 
 
@@ -256,7 +277,7 @@ text-decoration: none;
 .tabcontent {
     display: none;
       border-top:10px solid white;
-      height: 55vh;
+      height: 56vh;
 
 }
 
@@ -269,3 +290,117 @@ text-decoration: none;
   padding-right: 3px;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* Оформление панели */
+#side-checkbox {
+    display: none;
+}
+#side-checkbox-1 {
+    display: none;
+}
+.side-panel {
+    position: fixed;
+    z-index: 999999;
+    bottom: 8vh;
+    right: -100vw;
+    background-color: #f0c900;
+    transition: all 0.5s;   
+    width: 90vw;
+    height: 56vh;
+    box-shadow: -10px 0 20px rgba(0,0,0,0.4);
+    color: #212125;
+    padding-left: 20px;
+    text-transform: none;
+}
+.side-title {
+    font-size: 20px;
+}
+/* Оформление кнопки на странице */
+.side-button-1-wr {
+    text-align: center; /* Контейнер для кнопки, чтобы было удобнее ее разместить */
+}
+.side-button-1 .side-b {
+    font-weight: bold;
+    cursor: pointer; 
+
+}
+.side-button-1 .side-b:hover,
+.side-button-1 .side-b:active,
+.side-button-1 .side-b:focus {
+    color: #FFF;
+}
+.side-button-1 .side-b:after,
+.side-button-1 .side-b:before {
+    position: absolute;
+    height: 4px;
+    left: 50%;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+.side-button-1 .side-open:after,
+.side-button-1 .side-open:before {
+    background: green;
+}
+.side-button-1 .side-close:after,
+.side-button-1 .side-close:before {
+    background: red;
+}
+.side-button-1 .side-b:before {
+    top: -6px;
+}
+.side-button-1 .side-b:hover:after,
+.side-button-1 .side-b:hover:before {
+    width: 100%;
+    left: 0;
+}
+/* Переключатели кнопки 1 */
+.side-button-1 .side-close {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox:checked + .side-panel {
+    right: 0;
+}
+#side-checkbox-1:checked + .side-panel + .side-button-1-wr .side-button-1 .side-open {
+    display: none;
+}
+#side-checkbox-1:checked + .side-panel + .side-button-1-wr .side-button-1 .side-close {
+    display: block;
+}
+#side-checkbox-1:checked + .side-panel {
+    right: 0;
+}
+
+/* Оформление кнопки на панеле */
+.side-button-2 {
+    font-size: 30px;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    top: -2.5vw;
+    left: 2vw;
+    cursor: pointer;
+    transform: rotate(45deg);
+    color:#212125;
+    transition: all 280ms ease-in-out;    
+}
+.side-button-2:hover {
+    transform: rotate(45deg) scale(1.1);    
+    color:#212125;
+}

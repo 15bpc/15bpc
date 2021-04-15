@@ -18,6 +18,7 @@ html {
   html {
     font-size: 1.6rem;
   }
+ 
 }
   @font-face {
     font-family: OpenSans;
@@ -26,10 +27,10 @@ html {
   }
 
   body {
+    font-size: 4vw;
       font-family: 'Calibri';
       text-transform: lowercase;
       list-style: none;
-        font-size: 4vw;
         background-color: #f0c900;
         height: 100vh;
 
@@ -44,28 +45,13 @@ html {
 .header-text-row{
    height: 5%;
 }
-.site-header-1{
-text-align: center;
-letter-spacing: 0.5vw;
-color: gray;
-}
-.site-header-1>.head-clin-text{
-  color: red;
-  background-color: none;
-}
-.site-header-2{
-text-align: center;
-//*letter-spacing: 0.85vw;*//
-color: black;
-}
-.site-header-2>.head-clin-text{
-  background-color: red;
-  color: white;
-  position: relative;
+#sitehead{
+height:auto;
+margin-bottom: -9vh;
 }
 /*ГЛАВНОЕ ФОТО*/
-.main-img{
-  border-bottom: 4px solid gray;
+.map-img{
+  max-height: 55vh;
 }
 
 /*ПЛЕЕР*/
@@ -88,24 +74,19 @@ color: black;
 }
 
 
-/*РИСУНОК КЛИНИКИ*/
-.clinic-img{
-
-}
 
 /**/
 
-/*ИНФО*/
+/*TABS*/
+
+
+
+
+
+.tab-links{
 
 }
-.tab-links{
-  width: 100px;
-}
-.tab-content{
-  height: 70vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
+
 .tab-link{
   box-sizing: border-box;
   font-size: 3.5vh;
@@ -116,6 +97,7 @@ color: black;
   line-height: 5.3vh;
   width: auto;
   font-weight: 900;
+  cursor: pointer;
 }
 .tab-link>span{
   color: white;
@@ -132,11 +114,9 @@ padding-left: 2vw;
 .tab-cont{
   overflow-y: auto;
 overflow-x: hidden;
-left: 33.5%;
-height: 55%;
-  bottom: 6%;
-  position: fixed;
+height: 55vh;
 }
+
 #tabMenu{
   position: relative;
   height: 15%;
@@ -145,16 +125,15 @@ height: 55%;
 .lstuff{
   color: white;
   background-color: #212125;
-height: 55%;
-  bottom: 6%;
-  position: fixed;
+height: 55vh;
+overflow-y: hidden;
 
 }
 .lstuff>div{
    transform: rotate(-90deg);
    font-size: 9vh;
    position: relative;
-   bottom: -30vh;
+   bottom:-30vh;
    font-weight: bold;
 }
 
@@ -172,6 +151,19 @@ height: 55%;
 }*/
 .tab-link a{
   text-decoration: none;
+}
+
+
+@media screen and (min-width: 996px) {
+
+ .tab-cont{
+height: 90vh;
+}
+.lstuff{
+height: 90vh;
+}
+
+  
 }
 /*Инфо*/
 #v-pills-history{
@@ -264,9 +256,8 @@ text-decoration: none;
 .tabcontent {
     display: none;
       border-top:10px solid white;
-      height: 55%;
-  bottom: 6%;
-  position: fixed;
+      height: 55vh;
+
 }
 
 .text-block{

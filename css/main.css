@@ -114,6 +114,7 @@ margin-left: 2px;
 }
 
 
+
 .tab-pane{
 height: 100%;
 position: relative;
@@ -309,7 +310,7 @@ font-size: 4vh;
 
 
 .tab a:hover {
-    background-color: #212125;
+    background-color: none;
 }
 
 

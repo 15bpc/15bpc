@@ -210,7 +210,7 @@ font-weight: bold;
 .percents-block>div>div{
 height:30px;
 width:50px;
-font-size: 3.5vw;
+font-size: 15px;
 line-height: 3.5vw;
 
 }
@@ -330,6 +330,13 @@ position: relative;
 }
 .visible1 {
     right: 0vw;
+}
+@media screen and (min-width: 996px) {
+
+ .tabcontent {
+  border-top:none;
+ }
+  
 }
 .text-block{
     color: white;

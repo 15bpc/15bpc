@@ -30,9 +30,9 @@
       
               <div class=" align-middle text-left mb-4 mx-0 px-3 " id="tabMenu">
         <div class="nav flex-column tab" aria-orientation="vertical">
-          <a class="tab-link tablinks " onclick="openTab(event, 'build')"><span>строим</span><span> клинику</span></a>
+          <a class="tab-link tablinks " onclick="openTab(event, 'build')"><span>строим</span><span style="margin-left: 2px;"> клинику</span></a>
           <a class="tab-link tablinks" onclick="openTab(event, 'partners')"><span>партнеры</span></a>
-          <a class="tab-link tablinks" onclick="openTab(event, 'helping')"><span>ваша</span><span> помощь</span></a>
+          <a class="tab-link tablinks" onclick="openTab(event, 'helping')"><span>ваша</span><span style="margin-left: 2px;"> помощь</span></a>
           <a class="tab-link tablinks" onclick="openTab(event, 'thanks')"><span>спасибо</span></a>
         </div>
     </div></div>
@@ -47,10 +47,10 @@
 
 
 
-          <div class="text-left tabcontent pt-1" id="build" >
+          <div class="text-left tabcontent pt-1 px-3" id="build" >
             <div class="row mr-0 ml-0" >
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>строим</div></div>
-                   <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-center">
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>строим</div></div>
+                   <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center">
 
                         <img class="img-fluid main-img"  src="img/photo.png" alt="">
                        <div class="bg-white" style="display: flex; padding: none;"><span class="text-justify text-block py-1 mx-0" style="text-transform: none; height: 100%; font-size: 5vw;letter-spacing: 0.8vw; flex-grow:1;font-weight: bold; ">Феликс Тамаев</span><span style="text-transform: none; height: 100%; font-size: 5vw;" class="py-1 mb-0 px-1 text-block btn-play"><span title="Play" class="fa fa-play aligned"></span></span></div>
@@ -138,11 +138,11 @@
 
 
 
-        <div class=" tabcontent pt-1" id="partners">
+        <div class="text-left tabcontent pt-1 px-3" id="partners">
 
            <div class=" row mx-0 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div style="font-size: 7vh;">партнеры</div></div>
-                   <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-left"> 
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div style="font-size: 7vh;">партнеры</div></div>
+                   	<div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center">
                   
         </div>  
        
@@ -155,10 +155,10 @@
 
 
 
-        <div class=" tabcontent pt-1" style="position: absolute; top: 0" id="helping">
+        <div class="text-left tabcontent pt-1 px-3" style="position: absolute; top: 0" id="helping">
  <div class="row mx-0 mb-1 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>помощь</div></div>
-              <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-right"> 
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>помощь</div></div>
+              <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-right"> 
 				<input type="checkbox" id="side-checkbox" />
 				<div class="side-panel text-right">
 				    <label class="side-button-2 text-right" for="side-checkbox">+</label>    
@@ -196,13 +196,13 @@
 						        <div class="side-b side-close text-block">Закрыть</div>
 						    </label>
 						</div>
-  	                     
+  	                                 <!-- Кнопка запуска модального окна -->
+                      <div><span class="text-block"> </span><span data-toggle="modal" data-target="#donate"class="text-block">перевод</span></div>
   	                        <span>для добровольных <br> пожертвований <br> на строительство <br> клиники гипертонии</span> <br>
 
 
 
-                      <!-- Кнопка запуска модального окна -->
-                      <span class="text-block"> </span><span data-toggle="modal" data-target="#donate"class="text-block">оплатить</span>
+          
                    
         </div>  
                      </div>
@@ -212,11 +212,11 @@
 
 
 
-        <div class=" tabcontent pt-1" id="thanks">
+        <div class="text-left tabcontent pt-1 px-3" id="thanks">
 
            <div class=" row mx-0 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mx-2 lstuff"><div>спасибо</div></div>
-                   <div class="col-8 col-sm-8 col-md-8 col-lg-9 col-xl-9 px-0 tab-cont text-left"> 
+                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>спасибо</div></div>
+                   <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center"> 
                   
         </div>  
        
@@ -258,7 +258,7 @@
 </div>  
   <div class="row pl-0 mx-0 align-middle" id="foots">
   <div class="class= w-100  text-center px-3 footer-1 ">
-   <a href="mailto:15bpc@mail.ru" style="width: 25vh; font-weight: bold;"> <span  class="px-1">15bpc@mail</span> <span  class="px-1">ru</span></a> <i class="fas fa-map-marker-alt tablinks mx-2"  onclick="openTab(event, 'map')"></i></span><span style="width: 25vh"></span>
+   <a href="mailto:15bpc@mail.ru" style=""> <span  class="px-1 text-center">15bpc@mail</span> <span  class="px-1 ml-1 text-center">ru</span></a> <i class="fas fa-map-marker-alt tablinks mx-2"  onclick="openTab(event, 'map')"></i></span><span style="flex:2 1 100px"></span>
      </div>
   </div>
 </div>    
@@ -452,9 +452,9 @@ tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById("startReading").style['margin-top'] = "0%";
+    document.getElementById("startReading").style['margin-top'] = "1rem";
 	document.getElementById("tabMenu").style.cssText= `
-    bottom: 15%;
+    bottom: 7%;
     font-size: 4vh;`;	
 
     document.getElementById(tabName).style.display = "block";

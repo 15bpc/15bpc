@@ -203,13 +203,13 @@ font-weight: bold;
   justify-content: flex-end;
   height: 200px;
 
-  font-size: 20vw;
+  font-size: 70px;
   margin-left: 4vw;
 }
 
 .percents-block>div>div{
 height:30px;
-width:17vw;
+width:50px;
 font-size: 3.5vw;
 line-height: 3.5vw;
 

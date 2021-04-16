@@ -29,6 +29,7 @@ html {
   body {
     font-size: 4vw;
       font-family: 'Calibri';
+      font-weight: bold;
       text-transform: lowercase;
       list-style: none;
         background-color: #f0c900;
@@ -40,6 +41,8 @@ html {
 
 #startReading{
   margin-top: 20%;
+  transition: margin-top;
+  transition-duration: 0.5s;
 }
 
 #sitehead{
@@ -96,22 +99,21 @@ background-size: contain;
 
 .tab-link{
   box-sizing: border-box;
-  font-size: 3.5vh;
   border: none;
   border-radius: 0px;
-  padding:0px;
-  margin-top: 2px;
-  line-height: 5.3vh;
-  width: auto;
-  font-weight: 900;
+  font-weight: bold;
   cursor: pointer;
+
 }
 .tab-link>span{
   color: white;
   background-color: #212125;
-  margin-left: 3px;
-  padding: 2px;
+
+  padding: 0px 2px 2px 2px;
+margin-left: 2px;
 }
+
+
 .tab-pane{
 height: 100%;
 position: relative;
@@ -127,6 +129,9 @@ height: 51vh;
 #tabMenu{
   position: relative;
   height: 15%;
+    font-size: 5vh;
+    transition: bottom, font-size;
+    transition-duration: 0.5s; 
 }
 
 .lstuff{
@@ -240,12 +245,20 @@ text-transform: none;
   display: flex;
   flex-direction: row;
   width: auto;
-  font-size: 3.5vh;
+  font-size: 3vh;
   position: absolute;
   bottom: 3%;
   align-content: center;
   justify-content: center;
   height: 5%;
+}
+@media screen and (min-height: 600px) {
+.footer-1{
+
+  font-size: 2.5vh;
+}
+
+  
 }
 .footer-1>a{
   color:white;
@@ -260,6 +273,9 @@ text-decoration: none;
   .footer-1>i{
 font-size: 4vh;
   cursor:pointer;
+  }
+  #foots{
+    transition: opacity 0.3s;
   }
 #carouselExampleControls{
   position: relative;
@@ -304,11 +320,16 @@ font-size: 4vh;
 
 .tabcontent {
     display: none;
+    right: -150vw;
       border-top:2vh solid white;
       height: 53vh;
 box-sizing: border-box;
+transition: right 0.5s;
+position: relative;
 }
-
+.visible1 {
+    right: 0vw;
+}
 .text-block{
     color: white;
   background-color: #212125;

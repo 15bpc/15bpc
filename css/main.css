@@ -49,6 +49,14 @@ html {
         height: 100vh;
 
 }
+@media screen and (orientation:landscape) and (max-device-width: 900px) {
+    html{
+
+        width: 320px; /*Разрешение экрана iPhone*/
+        position: absolute;
+
+    }
+}
 
 /*ПЕРВАЯ СТРОКА*/
 

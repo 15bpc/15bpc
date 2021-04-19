@@ -67,16 +67,13 @@ height:auto;
 margin-bottom: 1vh;
 max-height: 44vh;
 }
-@media screen and (orientation:landscape) and (max-device-width: 768px) {
+@media screen and (orientation:landscape) and (max-device-width: 900px) {
    
-
-  #startReading{
   #startReading>img{
 max-height: 12vh;
 }
 
     }
-}
 
 /*ГЛАВНОЕ ФОТО
 .map-img{
@@ -287,7 +284,11 @@ text-transform: none;
 
   font-size: 2.5vh;
 }
+@media screen and (orientation:landscape) and (max-device-width: 900px) {
+   
+.footer-1{
 
+  bottom: 1vh;
   
 }
   .footer-1>a{

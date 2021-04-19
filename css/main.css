@@ -58,12 +58,26 @@ html {
   transition: margin-top;
   transition-duration: 0.5s;
 }
+#startReading>img{
+max-height: 25vh
+}
 
 #sitehead{
 height:auto;
 margin-bottom: 1vh;
 max-height: 44vh;
 }
+@media screen and (orientation:landscape) and (max-device-width: 768px) {
+   
+
+  #startReading{
+  #startReading>img{
+max-height: 12vh;
+}
+
+    }
+}
+
 /*ГЛАВНОЕ ФОТО
 .map-img{
   max-height: 55vh;

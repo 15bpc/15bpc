@@ -54,7 +54,7 @@ html {
 /*ПЕРВАЯ СТРОКА*/
 
 #startReading{
-  margin-top: 20%;
+  margin-top: 15vh;
   transition: margin-top;
   transition-duration: 0.5s;
 }
@@ -263,7 +263,7 @@ text-transform: none;
   width: auto;
   font-size: 3vh;
   position: absolute;
-  bottom: 3%;
+  bottom: 3vh;
   align-content: stretch;
   justify-content: center;
   height: 5%;

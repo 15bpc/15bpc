@@ -317,7 +317,20 @@ text-transform: none;
   top: 2px;
 }
 
+#bankcard{
+ border:2px solid black;
+ border-radius: 7px;
+ width:90%;
+ height: 50%;
 
+
+}
+#bankcard>div{
+position: relative;
+top: 40%;
+text-align: center;
+
+}
 .oplata{
   color: white;
   background-color: #212125;

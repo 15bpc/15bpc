@@ -1,4 +1,13 @@
 @CHARSET "ISO-8859-1";
+@font-face {
+	font-family: 'Conv_RodchenkoCTT Regular';
+	src: url('fonts/RodchenkoCTT Regular.eot');
+	src: local('☺'), url('fonts/RodchenkoCTT Regular.woff') format('woff'), url('fonts/RodchenkoCTT Regular.ttf') format('truetype'), url('fonts/RodchenkoCTT Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 /* Reset CSS
  * --------------------------------------- */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,

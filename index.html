@@ -1,517 +1,83 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Сайт посвященный сбору средств на строительство Владикавказской Клиники Гипертонии">
-  <meta name="keywords" content="">
-  <meta name="author" content="osweb.site">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="css/flag-icon.min.css" rel="stylesheet" type="text/css">
-  <link href="css/main.css" rel="stylesheet">
-  <link rel="shortcut icon" href="" type="image/x-icon">
-  <link rel="icon" href="img/logo.png" type="image/x-icon">
-  <title>Клиника гипертонии</title>
-</head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>REDapp</title>
+	<meta name="author" content="osweb.site" />
+	<meta name="description" content="RedApp" />
+	<meta name="keywords"  content="pile,piling,piling.js,stack,pages,scrolling,stacking,touch,fullpile,scroll,plugin,jquery" />
+	<meta name="Resource-type" content="Document" />
 
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+	<script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+
+			/*
+			* Plugin intialization
+			*/
+	    	$('#pagepiling').pagepiling({
+	    		anchors: ['start', 'instruction1', 'instruction2','about', 'download'],
+			    sectionsColor: [],
+			    navigation: {
+			    	'position': 'left',
+			   		'tooltips': ['Начало', 'Инструкция 1','Инструкция 2', 'О приложении', 'Скачать']
+			   	},
+			    afterRender: function(){
+			    	$('#pp-nav').addClass('custom');
+			    },
+			    afterLoad: function(anchorLink, index){
+			    	if(index>1){
+			    		$('#pp-nav').removeClass('custom');
+			    	}else{
+			    		$('#pp-nav').addClass('custom');
+			    	}
+			    }
+			});
+
+
+			/*
+		    * Internal use of the demo website
+		    */
+		    $('#showExamples').click(function(e){
+				e.stopPropagation();
+				e.preventDefault();
+				$('#examplesList').toggle();
+			});
+
+			$('html').click(function(){
+				$('#examplesList').hide();
+			});
+	    });
+    </script>
+
+
+</head>
 <body>
 
-  <div class="container-fluid align-middle " id="main_container" style="padding:0;">
-  	<div class="row mx-0">
-  	<div class="class= col-md-12 col-lg-4 col-xl-4 col-sm-12 col-12 pr-0 pl-0" style="max-height: 44vh; box-sizing: border-box;" id="sitehead">
-    <div class=" align-middle site-header clinic-img mb-3 mx-0 px-3  text-center" id="startReading">
-		<img class="img-fluid mb-1" src="img/head.png" alt="" onclick="openTab(event, 'closeAll')"></div>
-      
-              <div class=" align-middle text-left mb-4 mx-0 px-3 " id="tabMenu">
-        <div class="nav flex-column tab" aria-orientation="vertical">
-          <a class="tab-link tablinks " onclick="openTab(event, 'build')"><span>строим</span><span style="margin-left: 2px;"> клинику</span></a>
-          <a class="tab-link tablinks" onclick="openTab(event, 'partners')"><span>партнеры</span></a>
-          <a class="tab-link tablinks" onclick="openTab(event, 'helping')"><span>ваша</span><span style="margin-left: 2px;"> помощь</span></a>
-          <a class="tab-link tablinks" onclick="openTab(event, 'thanks')"><span>спасибо</span></a>
+	<div id="pagepiling">
+	    <div class="section" id="section1">
+		<img src="imgs/maket (1).jpg" alt="pagePiling" style="width: 80%;"/>
+	    </div>
+	    <div class="section" id="section2">
+          <img src="imgs/maket (2).jpg" alt="pagePiling" style="width: 80%;"/>
         </div>
-    </div></div>
+	    <div class="section" id="section3">
+        	<img src="imgs/maket (3).jpg" alt="pagePiling" style="width: 80%;"/>
+	    </div>
+	    <div class="section" id="section4">
+        	<img src="imgs/maket (4).jpg" alt="pagePiling" style="width: 80%;"/>
+	    </div>
+		<div class="section" id="section5">
+			<img src="imgs/maket (5).jpg" alt="pagePiling" style="width: 80%;"/>
+		</div>
+	</div>
 
-
-   
-
-
-
-  	<div class=" col-md-12 col-lg-8 col-xl-8 col-sm-12 col-12 pr-0 pl-0" >
-        <div class="alltabs" >
-
-
-
-          <div class="text-left tabcontent pt-1 px-3" id="build" >
-            <div class="row mr-0 ml-0" >
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>строим</div></div>
-                   <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center">
-
-                        <img class="img-fluid main-img"  src="img/photo.png" alt="">
-                       <div class="bg-white" style="display: flex; padding: none;"><span class="text-justify text-block py-1 mx-0" style="text-transform: none; height: 100%; font-size: 5vw;letter-spacing: 0.8vw; flex-grow:1;font-weight: bold; ">Феликс Тамаев</span><span style="text-transform: none; height: 100%; font-size: 5vw;" class="py-1 mb-0 px-1 text-block btn-play"><span title="Play" class="fa fa-play aligned"></span></span></div>
-                       	<div  class=" ">
-                       	<p class="text-right pl-15 pr-15 mb-0 inst"><a  href="https://www.instagram.com/doc.tamaev/">@doc.tamaev</a></p><p class="text-left mb-2">врач-кардиолог</p>
-                        </div>                           
-                        <audio crossorigin preload="auto">
-                            <source src="sound.mp3" type="audio/mpeg">
-                          </audio>
-        <img class="d-block w-100 my-2" src="img/maket.png" alt="Клиника гипертонии Владикавказ">
-
-        <img class="d-block w-100 my-2" src="img/maket1.png" alt="Клиника гипертонии во Владикавказе">
-
-        <img class="d-block w-100" src="img/maket2.png" alt="слайд">
-
-        <img class="d-block w-100 my-2" src="img/maket3.png" alt="слайд">
-
-        <img class="d-block w-100 my-2" src="img/maket4.png" alt="Второй слайд">
-
-        <img class="d-block w-100 my-2" src="img/maket5-0.png" alt="Постройка клиники гипертонии на набережной">
-
-        <img class="d-block w-100 my-2" src="img/maket5.png" alt="Клиника гипертонии на набережной">
-  
-                      <!-- <div class="container-fluid mb-4  py-4 mx-0" >
-                        <div class=" container-fluid align-middle mx-0" >
-
-                          <div class="btn-group audio-player align-middle" role="group" aria-label="Audio Player">
-                            <button class="btn btn-back-5"><span title="-5 seconds" class="fa fa-fast-backward aligned"></span></button>
-                            <button class="btn " ><span title="Play" class="fa fa-play aligned"></span></button>
-                            <button class="btn btn-forward-5"><span title="+5 seconds" class="fa fa-fast-forward aligned"></span></button>     
-                          </div>
-                          <div class="progress">
-                            <div class="progress-bar bg-danger mx-0" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>    
-                        </div>
-                      </div>-->
-
-                       <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="img/maket.png" alt="Клиника гипертонии Владикавказ">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket1.png" alt="Клиника гипертонии во Владикавказе">
-      </div>
-       <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket2.png" alt="слайд">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket3.png" alt="слайд">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket4.png" alt="Второй слайд">
-      </div>
-       <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket5-0.png" alt="Постройка клиники гипертонии на набережной">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="img/maket5.png" alt="Клиника гипертонии на набережной">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>-->
-  		<div class="bg-white percents-block my-2">
-  			<div class="text-left" style="margin-left: 1vw">
-  				<span style=" font-size: 115px;">15</span>
-  				 <div style="width: auto;">выполнено от запланированных работ</div>
-  			</div>
-  			<div style="background-color: #f0c900;  width: 50px;"><span style="padding-bottom: 40px;">%</span>
-  			<div style="background-color:black;"></div>
-  			</div>
-  	    </div>
-
-          </div>
-   </div>
-            </div>
-
-
-
-
-        <div class="text-left tabcontent pt-1 px-3" id="partners">
-
-           <div class=" row mx-0 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div style="font-size: 7vh;">партнеры</div></div>
-                   	<div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center">
-                  
-        </div>  
-       
-         
-                     </div>
-                      </div>
-
-           
-
-
-
-
-        <div class="text-left tabcontent pt-1 px-3" id="helping">
- <div class="row mx-0 mb-1 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>помощь</div></div>
-              <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-right"> 
-				<input type="checkbox" id="side-checkbox" />
-				<div class="side-panel text-right">
-				    <label class="side-button-2 text-right" for="side-checkbox">+</label>    
-				    <div class=" py-3 my-3" id="bankcard">
-
-				    	<svg width="150" height="20" style="position: absolute; top:10%; left:5%;" viewBox="0 0 210 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M28.9083 6.35486C29.6749 7.35932 30.3239 8.45058 30.8421 9.60673L16.1419 20.5889L9.99829 16.6859V11.9904L16.1419 15.8934L28.9083 6.35486Z" fill="#000000"/>
-<path d="M3.72827 16.3545C3.72827 16.1438 3.73334 15.9345 3.74348 15.7264L0.0202772 15.5415C0.00760464 15.8112 4.49933e-06 16.0835 4.49933e-06 16.3583C-0.00157962 18.5055 0.415154 20.6318 1.22631 22.6153C2.03746 24.5989 3.22706 26.4006 4.72687 27.9171L7.36783 25.2419C6.21333 24.0766 5.29746 22.6915 4.67286 21.1663C4.04826 19.6411 3.72725 18.0058 3.72827 16.3545Z" fill="#000000"/>
-<path d="M16.1385 3.77747C16.3463 3.77747 16.5528 3.78518 16.7581 3.79545L16.9444 0.0208629C16.6775 0.00801981 16.4088 0.00159904 16.1385 0.00159904C14.0188 -0.00102064 11.9196 0.420712 9.96126 1.24258C8.00291 2.06445 6.22405 3.27027 4.72681 4.7908L7.36777 7.4673C8.51766 6.29688 9.8845 5.36835 11.3897 4.73512C12.8949 4.10189 14.5087 3.77643 16.1385 3.77747Z" fill="#000000"/>
-<path d="M16.1385 28.9318C15.9307 28.9318 15.7241 28.9318 15.5176 28.9151L15.3313 32.6884C15.5991 32.7021 15.8682 32.709 16.1385 32.709C18.2573 32.7112 20.3555 32.2892 22.3128 31.4671C24.2701 30.645 26.0478 29.439 27.5439 27.9185L24.908 25.2433C23.7579 26.4131 22.3912 27.3411 20.8863 27.9741C19.3814 28.6071 17.7679 28.9326 16.1385 28.9318Z" fill="#000000"/>
-<path d="M23.1339 5.97207L26.2716 3.6282C23.4037 1.27465 19.8238 -0.0065332 16.1335 2.50537e-05V3.77718C18.6324 3.77404 21.0733 4.53938 23.1339 5.97207Z" fill="#000000"/>
-<path d="M32.2759 16.3545C32.2779 15.3719 32.1931 14.391 32.0224 13.4237L28.5489 16.018C28.5489 16.1298 28.5489 16.2415 28.5489 16.3545C28.5498 18.1118 28.1863 19.8497 27.4821 21.4555C26.7778 23.0613 25.7484 24.4992 24.4607 25.676L26.9661 28.4823C28.6402 26.9506 29.978 25.0795 30.8927 22.9903C31.8075 20.901 32.2787 18.6402 32.2759 16.3545Z" fill="#000000"/>
-<path d="M16.1386 28.9318C14.4045 28.9324 12.6896 28.5639 11.1049 27.8502C9.52028 27.1365 8.10119 26.0934 6.93956 24.7886L4.17188 27.3264C5.68303 29.0233 7.52923 30.3793 9.59077 31.3066C11.6523 32.2338 13.8831 32.7116 16.1386 32.7089V28.9318Z" fill="#000000"/>
-<path d="M7.81645 7.0329L5.31235 4.22668C3.63776 5.75806 2.29948 7.62906 1.3843 9.71834C0.469132 11.8076 -0.00249507 14.0685 9.92663e-06 16.3544H3.72828C3.72751 14.5972 4.09104 12.8593 4.79529 11.2535C5.49955 9.64775 6.52883 8.20981 7.81645 7.0329Z" fill="#000000"/>
-<g clip-path="#000000">
-<path d="M93.1298 9.35282L97.7473 5.94421H82.2935V26.427H97.7473V23.0184H86.7031V17.7717H96.1243V14.3631H86.7031V9.35282H93.1298Z" fill="#000000"/>
-<path d="M71.8952 13.9236H66.53V9.35147H75.0927L79.7074 5.9325H62.123V26.4153H71.3277C76.4883 26.4153 79.45 24.0717 79.45 19.9845C79.45 16.0744 76.7674 13.9236 71.8952 13.9236ZM71.1292 23.0056H66.53V17.3301H71.1292C73.9204 17.3301 75.2291 18.2812 75.2291 20.1679C75.2291 22.0545 73.8366 23.0056 71.1292 23.0056Z" fill="#000000"/>
-<path d="M109.107 5.94128H100.695V26.424H105.104V20.6216H109.107C114.474 20.6216 117.794 17.7919 117.794 13.2705C117.794 8.74923 114.474 5.94128 109.107 5.94128ZM109.014 17.2104H105.104V9.35249H109.014C111.837 9.35249 113.395 10.7487 113.395 13.283C113.395 15.8173 111.837 17.2104 109.014 17.2104Z" fill="#000000"/>
-<path d="M55.5064 21.5902C54.3674 22.2082 53.0913 22.5282 51.7962 22.5206C47.9198 22.5206 45.1077 19.7477 45.1077 15.9294C45.1077 12.111 47.9198 9.33209 51.7962 9.33209C53.1941 9.3083 54.563 9.73303 55.7029 10.5443L58.7871 8.2684L58.5785 8.11991C56.7794 6.53499 54.3755 5.69556 51.6239 5.69556C48.6394 5.69556 45.9332 6.70166 44.001 8.53205C43.024 9.47449 42.2514 10.6086 41.7311 11.8636C41.2109 13.1186 40.9542 14.4675 40.9773 15.8263C40.9566 17.1989 41.2121 18.5616 41.7285 19.8331C42.2449 21.1046 43.0116 22.2587 43.9829 23.2267C45.9241 25.1298 48.6243 26.1783 51.5876 26.1783C54.6839 26.1783 57.3902 25.0964 59.2226 23.1267L56.4619 21.066L55.5064 21.5902Z" fill="#000000"/>
-<path d="M135.277 13.9236H129.914V9.35147H141.439V5.9325H125.504V26.4153H134.697C139.857 26.4153 142.819 24.0717 142.819 19.9845C142.831 16.0744 140.149 13.9236 135.277 13.9236ZM134.511 23.0056H129.914V17.3301H134.511C137.302 17.3301 138.61 18.2812 138.61 20.1679C138.61 22.0545 137.23 23.0056 134.511 23.0056Z" fill="#000000"/>
-<path d="M192.947 26.386H188.477V5.9032H192.947V14.5061H195.38L201.95 5.9032H207.016L199.223 15.6471L208.272 26.386H202.341L195.69 18.3303H192.947V26.386Z" fill="#000000"/>
-<path d="M159.059 22.4934H149.603L148 26.4709H143.243L152.112 5.98816H156.868L165.593 26.4709H160.662L159.059 22.4934ZM157.578 18.7821L154.359 10.827L151.122 18.7821H157.578Z" fill="#000000"/>
-<path d="M171.611 5.98816V14.5414H180.861V5.98816H185.47V26.4709H180.861V18.4H171.611V26.4709H167.002V5.98816H171.611Z" fill="#000000"/>
-</g>
-<defs>
-
-<clipPath id="clip0">
-<rect width="168.414" height="21.6207" fill="white" transform="translate(40.9656 5.6897)"/>
-</clipPath>
-</defs>
-</svg>
-
-
-				    	<div><span class="text-block" >4274</span><span class="text-block">3200</span><span class="text-block">6651</span><span class="text-block">4269</span></div></div>
-				     <span class="text-block" style="position: relative; top:5vh;"> </span><span class="text-block" style="position: relative; top:5vh; cursor: pointer;" onclick="copyTxt(1)">оплатить</span>
-				</div>
-				<div class="side-button-1-wr text-right">
-				    <label class="side-button-1 " for="side-checkbox">
-				        <div class="side-b side-open"><span class="text-block side-b side-open" >карта</span><span class="text-block side-b side-open">СБЕР</span></div>
-				        
-				        <div class="side-b side-close text-block">Закрыть</div>
-				    </label>
-				</div>
- 							
-						<input type="checkbox" id="side-checkbox-1" />
-						<div class="side-panel">
-						    <label class="side-button-2" for="side-checkbox-1">+</label>    
-						    <p class="pt-1" style="font-size: 2.5vh; line-height: 3vh;">
-						    	Расчетный счет для добровольных пожертвований на строительство клиники гипертонии <br>
-						    	ООО "Диакор" <br>
-						    	ИНН 1501034563 <br>
-						    	КПП 151501001<br>
-						    	ОГРН 102150508017<br>
-						    	Филиал "Центральный" банка ВТБ (ПАО) г.Москва<br>
-						    	р/счет 40702810700220001994 <br>
-						    	БИК 044525411<br>
-						    	к/с 30101810145250000411<br>
-						    	Юр. адрес: г.Владикавказ, ул Коцоева, 93 (он же фактический).<br>
-						    </p>
-						       <span class="text-block"> </span><span class="text-block">оплатить</span>
-						</div>
-						<div class="side-button-1-wr text-right">
-						    <label class="side-button-1 " for="side-checkbox-1">
-						        <div class="side-b side-open"><span class="text-block">банковский</span><span class="text-block">счет</span></div>
-						        <div class="side-b side-close text-block">Закрыть</div>
-						    </label>
-						</div>
-  	                                 <!-- Кнопка запуска модального окна -->
-                      <div><span class="text-block"> </span><span data-toggle="modal" data-target="#donate"class="text-block">перевод</span></div>
-  	                        <span>для добровольных <br> пожертвований <br> на строительство <br> клиники гипертонии</span> <br>
-
-
-
-          
-                   
-        </div>  
-                     </div>
-                      </div>
-
-
-
-
-
-        <div class="text-left tabcontent pt-1 px-3" id="thanks">
-
-           <div class=" row mx-0 ">
-                <div class="col-3 col-sm-3 col-md-2 col-lg-2 col-xl-2 tab-links text-right px-3 mr-0 lstuff"><div>спасибо</div></div>
-                   <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 pl-1 pr-0 tab-cont text-center"> 
-                  
-        </div>  
-       
-         
-                     </div>
-                      </div>
-
-
-                              <div class=" tabcontent pt-1" id="map">
- <div class="row pl-0 mx-0">
-  <div class="class= col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 text-center px-0 mx-0 map-block" >
-<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A63157add400f754fd5c8d0d2c628e789d039ebd3cead0391ce4271c5f5eb9a53&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>     </div>
-  </div>
-                      </div>
-
-
-
-            
-      </div>
-
-
-
-                            <!-- Модальное окно оплата -->
-              <div class="modal fade" id="donate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-
-              <iframe src="https://yoomoney.ru/quickpay/shop-widget?writer=seller&targets=%D0%9F%D0%BE%D0%B6%D0%B5%D1%80%D1%82%D0%B2%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%20%D1%81%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D1%82%D0%B2%D0%BE&targets-hint=&default-sum=50&button-text=13&payment-type-choice=on&hint=&successURL=http://15bpc.ru/&quickpay=shop&account=4100116695171587" width="100%" height="222" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
-                          <button type="button" class="close" style="position: absolute; left: 95%; bottom: 215px; width: 15px; height: 10px" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-
-  </div>
-  </div>    
-
-
-</div>
-</div>  
-  <div class="row pl-0 mx-0 align-middle" id="foots">
-  <div class="class= w-100  text-center px-3 footer-1 ">
-   <a href="mailto:15bpc@mail.ru" style=""> <span  class="px-1 text-center">15bpc@mail</span> <span  class="px-1 ml-1 text-center">ru</span></a> <i class="fas fa-map-marker-alt tablinks mx-2"  onclick="openTab(event, 'map')"></i></span><span style="flex:2 1 100px"></span>
-     </div>
-  </div>
-</div>    
-
-
-</div>
-  <script src="js/jquery-3.5.1.min.js"></script>
-
-  <script>
-;(function ( $, window, document, undefined ) {
-  'use strict';
-    var pluginName = "audioly",
-        defaults = {
-      element: ''
-        };
-  
-    function CDCPlugin( element, options ) {
-        this.element = element;
-        this.options = $.extend( {}, defaults, options) ;
-        this._defaults = defaults;
-        this._name = pluginName;
-      this.init();
-    }
-  
-    CDCPlugin.prototype = {
-        init: function() {
-      var defaults = this._defaults;
-      
-      defaults.this = this;
-      defaults.element = this.element;
-      
-      defaults.status = 0;
-      
-      this.bindControls();
-      
-      //$( '.progress' ).css( 'width', $( '.audio-player' ).width() + 'px' );
-      
-      
-      defaults.element.addEventListener( 'timeupdate', function() {
-        var currentTime = defaults.element.currentTime,
-          duration = defaults.element.duration,
-          percentage = ( currentTime + .25 ) / duration * 100;
-        
-        $( '.progress-bar' ).css( 'width', percentage + '%' ).attr( 'aria-valuenow', percentage );
-        
-        // $('.hp_range').stop(true,true).animate({'width':(currentTime +.25)/duration*100+'%'},250,'linear');
-      } );
-
-    },
-    bindControls: function() {
-      $( '.btn-play' ).on( 'click', function(){
-        defaults.this.play();
-      } );
-      $( '.btn-stop' ).on( 'click', function() { 
-        defaults.this.stop();
-      } );
-      $( '.btn-restart' ).on( 'click', function() { 
-        defaults.this.goto( 0 );
-      } );
-      $( '.btn-back-5' ).on( 'click', function() { 
-        defaults.this.goto( defaults.element.currentTime - 5 );
-      } );
-      $( '.btn-forward-5' ).on( 'click', function() { 
-        defaults.this.goto( defaults.element.currentTime + 5 );
-      } );
-      $( '.btn-back-1' ).on( 'click', function() { 
-        defaults.this.goto( defaults.element.currentTime - 1 );
-      } );
-      $( '.btn-forward-1' ).on( 'click', function() { 
-        defaults.this.goto( defaults.element.currentTime + 1 );
-      } );
-      $( '.btn-volume-up' ).on( 'click', function() { 
-        defaults.this.volume( 'up' );
-      } );  
-      $( '.btn-volume-down' ).on( 'click', function() { 
-        defaults.this.volume( 'down' );
-      } );
-    },
-    play: function(){
-      if ( defaults.status == 0 || defaults.status == 2 ) {
-        defaults.element.play();
-        $( '.btn-play span' ).attr( 'class', 'fa fa-pause aligned' );
-        defaults.status = 1;
-      } else if ( defaults.status == 1 ) {
-        defaults.element.pause();
-        $( '.btn-play span' ).attr( 'class', 'fa fa-play aligned' );
-        defaults.status = 2;
-      }     
-    },
-    stop: function(){
-      defaults.element.pause();
-      defaults.this.goto( 0 );
-      $( '.btn-play span' ).attr( 'class', 'fa fa-play aligned' );
-      defaults.status = 0;      
-    },
-    goto: function( time ){
-      defaults.element.currentTime = time;
-    },
-    volume: function( direction ){
-      var volume = defaults.element.volume;
-      if ( direction == 'up' ) {
-        if ( Math.round( 10 * volume ) / 10 >= 1 ) {
-          defaults.element.volume = 1;
-        } else {
-          defaults.element.volume += 0.1;         
-        }
-      } else {
-        if ( Math.round( 10 * volume ) / 10 <= 0 ) {
-          defaults.element.volume = 0;
-        } else {
-          defaults.element.volume -= 0.1;
-        }
-      }
-    }
-    };
-
-  // don't let the plugin load multiple times
-    $.fn[ pluginName ] = function( options ) {
-      return this.each( function() {
-        if ( !$.data( this, "plugin_" + pluginName ) ) {
-          $.data( this, "plugin_" + pluginName, new CDCPlugin( this, options ) );
-        }
-      } );
-    };
-})( jQuery, window, document );
-
-
-if( jQuery().audioly ) {
-  $( 'audio' ).audioly();
-} else {
-  if ( console.error ) {
-    console.error( 'The Bootstrap 4 Audio plugin is required.' ); 
-  } else {
-    console.log( 'The Bootstrap 4 Audio plugin is required.' );
-  }
-}
-
-
-
-// function VolumeUp( music, id ) {
-//  var audio = $( '#' + id );
-//  var volume = $( '#' + id ).prop( 'volume' ) + 0.1;
-//  if ( volume > 1 ) volume = 1;
-//  $( '#' + id ).prop( 'volume', volume );
-// }
-
-// function VolumeDown( music, id ) {
-//  var audio = $( '#' + id );
-//  var volume = $( '#' + id ).prop( 'volume' ) - 0.1;
-//  if ( volume < 0 ) volume = 0;
-//  $( '#' + id ).prop( 'volume', volume );
-// }
-
-
-
-document.documentElement.setAttribute( 'lang', 'en' );
-document.documentElement.removeAttribute( 'class' );
-axe.run( function( err, results ) {
-  console.log( results.violations );
-} );
-  </script>
-  <script>
-  	function openTab(evt, tabName) {
-    var i, tabcontent, tablinks;
-if (tabName=="closeAll") {
-tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].className =  tabcontent[i].className.replace(" visible1", "");
-        tabcontent[i].style.display = "none";
-
-    }
-    
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById("startReading").style['margin-top'] = "15vh";
-	document.getElementById("tabMenu").style.cssText= `
-    bottom: 0%;
-    font-size: 5vh;`;	
-	document.getElementById("foots").style.opacity = "1";
-}
-    	else{
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        tabcontent[i].className =  tabcontent[i].className.replace(" visible1", "");
-    }
-    
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById("startReading").style['margin-top'] = "1rem";
-	document.getElementById("tabMenu").style.cssText= `
-    bottom: 7%;
-    font-size: 4vh;`;	
-
-    document.getElementById(tabName).style.display = "block";
-    setTimeout(() => {  document.getElementById(tabName).className += " visible1"; }, 300);
-  
-    evt.currentTarget.className += " active";
-    document.getElementById("foots").style.opacity = "0";
-
- 	}
-
-}</script>
-<script type="text/javascript">
-	function copyTxt(number) {
-		var copyText;
-  	if(number==1){
-  		copyText= "4274320066514269";
-  };
-  
-  copyText.execCommand("copy");
-
-  alert("Copied the text: " + copyText.value);
-  console.log("sdas")
-
-}
-</script>
-  <script src="js/bootstrap.bundle.min.js" defer></script>
- 
 </body>
-
 </html>

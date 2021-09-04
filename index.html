@@ -62,21 +62,50 @@
 
 	<div id="pagepiling">
 	    <div class="section" id="section1">
-		<img src="imgs/maket (1).png" alt="pagePiling" style="width: 80%;"/>
+			<div style="width: 100%; height: 100%;">
+				<img src="imgs/maket (1).png" alt="pagePiling" style="width: 100%; height: 100%;"/>
+			</div>
 	    </div>
 	    <div class="section" id="section2">
-          <img src="imgs/maket (2).jpg" alt="pagePiling" style="width: 80%;"/>
+			<div style="width: 100%; height: 100%;">
+				 <img src="imgs/instr3.png" alt="pagePiling" style="width: 100%; height: 100%; position: absolute; top:0%; left: 0%; background-color: white;"/>
+				 <img src="imgs/instr2.png" alt="pagePiling" style="width: 100%; height: 100%; position: absolute; top:0%; left: 0%; background-color: white;" class="instructionImg2"/>
+				 <img src="imgs/instr1.png" alt="pagePiling" style="width: 100%; height: 100%; position: absolute; top:0%; left: 0%; background-color: white;" class="instructionImg1"/>
+			</div>
         </div>
 	    <div class="section" id="section3">
-        	<img src="imgs/maket (3).jpg" alt="pagePiling" style="width: 80%;"/>
+			<div style="width: 100%;">
+        		<img src="imgs/maket (3).jpg" alt="pagePiling" style="width: 100%;"/>
+			</div>
 	    </div>
 	    <div class="section" id="section4">
-        	<img src="imgs/maket (4).png" alt="pagePiling" style="width: 80%;"/>
+			<div style="width: 100%;">
+        		<img src="imgs/maket (4).png" alt="pagePiling" style="width: 100%;"/>
+			</div>
 	    </div>
 		<div class="section" id="section5">
-			<img src="imgs/maket (5).png" alt="pagePiling" style="width: 80%;"/>
+			<div style="width: 100%;">
+				<img src="imgs/maket (5).png" alt="pagePiling" style="width: 100%;"/>
+			</div>	
 		</div>
 	</div>
+
+
+
+	<script>
+$('.instructionImg1').click(function(){
+    $('.instructionImg1')
+							.delay(2000)
+							.fadeOut('normal', function(){});
+							
+	$('.instructionImg2')
+							.delay(5000)
+							.fadeOut('normal', function(){});
+	console.log('112');
+
+});
+	  </script>
+
 
 </body>
 </html>

@@ -985,8 +985,24 @@ text-align: center;
 h1{
 	font-size: 1.1em;
 }
-
+#bigText{
+	font-size: 0.8em;
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 320px) {
  body{

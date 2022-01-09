@@ -56,7 +56,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-family: Calibri, Arial, sans-serif;
 	color: #f2f2f2;
 }
 
@@ -912,10 +912,12 @@ padding-left: 2vw;
 }
 #logo{
 text-align: center;
+height: 40vh;
+width: 40vh;
 }
 #logo>img{
-	width: 80%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 }
 .first_section{
 	display: flex;

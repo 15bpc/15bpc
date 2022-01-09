@@ -81,26 +81,37 @@
 			<div style="width: 90vw;">
 				<span style="color: #e2a95d;">ДИАКОР <i>диагностика</i></span>
 					<div class="line1"> </div>
-ФУНКЦИОНАЛЬНАЯ ДИАГНОСТИКА: <br>
+					<div class="longText">
+						<span>
+									ФУНКЦИОНАЛЬНАЯ ДИАГНОСТИКА: <br>
 электрокардиограмма <br>
 суточное мониторирование ЭКГ <br>
 суточное мониторирование АД <br>
  <br>
+						</span>
+				<span>
 УЗ исследования:<br>
 эхокардиограмма ЭХОКГ <br>
 оценка состояния артерий и вен <br>
 органы брюшной полости <br>
 почки с оценкой почечного кровотока <br>
 <br>
-ЭКСПРЕСС АНАЛИЗ КРОВИ: <br>
+				</span>
+<span>
+	ЭКСПРЕСС АНАЛИЗ КРОВИ: <br>
 функциональная оценка почек <br>
 функциональная оценка печени <br>
 липидный обмен <br>
 оценка углеводного обмена <br>
 <br>
-ЭКСПРЕСС АНАЛИЗ МОЧИ: <br>
+</span>
+<span>ЭКСПРЕСС АНАЛИЗ МОЧИ: <br>
 общий анализ мочи <br>
 анализ мочи на микроальбумин
+</span>
+
+	
+					</div>
 
 
 			</div>
@@ -108,29 +119,12 @@
         </div>
 	    <div class="section" id="section3">
 			<div style="width: 90vw;" id="teamSec">
-				<div style="width:40vw;">         		<span style="color: black;">ДИАКОР <i>команда</i></span>
+				<div id="teamCont">         		<span style="color: black;">ДИАКОР <i>команда</i></span>
         			<div class="line2"> </div>
 
-<span style="color:black; font-size: 1.5em;"> МНОГОПРОФИЛЬНАЯ 
-КОМАНДА СПЕЦИАЛИСТОВ</span> <br>
-
-
-              <div class="" id="tabMenu">
-        <div class="tab" aria-orientation="vertical">
-        <ul>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'kardiolog')"><span>кардиолог</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'nevrolog')"><span>невролог</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'endokrinolog')"><span>эндокринолог</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'psikhonevrolog')"><span>психоневролог</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'psikholog')"><span>психолог</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'uzi1')"><span>врач УЗИ _ сердце / сосуды / ЭКГ</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'uzi2')"><span>врач УЗИ _ весь спектр исследований</span></a></li>
-         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'administrator')"><span>администратор/медицинская сестра</span></a></li>
-		</ul>
-        </div>
-    </div>  
-</div>
-		<div class="docInfo tabcontent" id="kardiolog" style="display: none;">
+<h1 style="color:black;"> МНОГОПРОФИЛЬНАЯ 
+КОМАНДА СПЕЦИАЛИСТОВ</h1>
+	<div id=docMob>		<div class="docInfo tabcontent" id="kardiolog" style="display: flex;">
 			<img src="imgs/cardiolog.png" alt="">
 			<span>ТАМАЕВ <br> Феликс Борисович <br>cтаж работы 30 лет</span>
 		</div>
@@ -162,6 +156,25 @@
 			<img src="imgs/administrator.png" alt="">
 			<span>САВВОН <br>Екатерина Вячеславовна<br>администратор/медицинская сестра</span>
 		</div>
+	</div>
+
+              <div class="" id="tabMenu">
+        <div class="tab" aria-orientation="vertical">
+        <ul>
+         <li>  <a class="tab-link tablinks active" onclick="openTab(event, 'kardiolog')"><span>кардиолог</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'nevrolog')"><span>невролог</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'endokrinolog')"><span>эндокринолог</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'psikhonevrolog')"><span>психоневролог</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'psikholog')"><span>психолог</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'uzi1')"><span>врач УЗИ _ сердце / сосуды / ЭКГ</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'uzi2')"><span>врач УЗИ _ весь спектр исследований</span></a></li>
+         <li>  <a class="tab-link tablinks" onclick="openTab(event, 'administrator')"><span>администратор/медицинская сестра</span></a></li>
+		</ul>
+        </div>
+    </div>  
+</div>
+
+
 
 
 			<a href="tel:12345678"><img src="imgs/phone.png" alt="" class="phone"></a>
@@ -171,6 +184,7 @@
 			<div style="width: 90vw;">
 			<span style="color: #e2a95d;">ДИАКОР <i>пациент</i></span> 
 				<div class="line1"> </div>
+				<div id="bigText">
 Кого-то в прохладе знобит, а кто-то в холод открывает окна. 
 Кто-то страдает от давления 120, а кто-то не замечает и 170. 
 При этом, экспертное сообщество определяет уровень, после которого повышенное давление становится причиной перехода в «лигу гипертоников». Конечно, эксперты отталкиваются от собранных эпидемиологических данных, определенных для среднестатистического человека.
@@ -184,6 +198,8 @@
 Полученные таким образом представления, учитывающие особенности пациента, помогают врачу предложить индивидуальную лечебную стратегию.
 Выбор лечебной стратегии, безусловно, является прерогативой врача, а вот ее реализация, совместной с пациентом компетенцией. <br>
 Лабораторно-инструментальный минимум: ЭКГ, ультразвуковое исследование сердца, УЗ сосудов шеи и брюшного отдела аорты, анализ крови на глюкозу, общий анализ мочи, анализ мочи на микроальбумин, анализ крови на креатинин и мочевую кислоту.
+				</div>
+
 
 			<a href="tel:12345678"><img src="imgs/phone.png" alt="" class="phone"></a>
 		</div>

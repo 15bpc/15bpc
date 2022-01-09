@@ -917,7 +917,6 @@ height: 40vh;
 
 }
 #logo>img{
-	width: 100%;
 	height: 100%;
 }
 .first_section{
@@ -926,7 +925,7 @@ height: 40vh;
 	jusify-content: center;
 	align-items: center;
 	width: 90vw;
-	height: 100%;
+	height: 100vh;
 }
 #section1_text{
 	font-size: 1.5em;

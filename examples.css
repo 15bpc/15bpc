@@ -914,7 +914,7 @@ padding-left: 2vw;
 	margin-top: 5vh;
 text-align: center;
 height: 40vh;
-width: 40vh;
+
 }
 #logo>img{
 	width: 100%;
@@ -1090,10 +1090,12 @@ padding-left: 2vw;
 }
 #logo{
 text-align: center;
+padding-top: 5vh;
+height: 40vh;
 }
 #logo>img{
-	width: 80%;
-	height: 80%;
+	width: 100%;
+	height: 100%;
 }
 .first_section{
 	display: flex;
@@ -1101,6 +1103,7 @@ text-align: center;
 	jusify-content: center;
 	align-items: center;
 	width: 90vw;
+	height: 100%;
 }
 #section1_text{
 	font-size: 1.5em;
@@ -1150,7 +1153,7 @@ text-align: center;
 	margin-right: 3vw;
 }
 #map{
-	height: 45vh;
+	height: 50vh;
 	width: 100%;
 	position: absolute;
 	bottom: 0px;

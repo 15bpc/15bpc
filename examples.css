@@ -17,6 +17,7 @@ form,fieldset,input,textarea,p,blockquote,th,td {
 }
 a{
 	text-decoration:none;
+	color: inherit;
 }
 table {
     border-spacing: 0;
@@ -593,7 +594,7 @@ padding-left: 2vw;
 	height: 80vh;
 	flex-wrap: wrap;
 }
-#bigText{
+.bigText{
 	font-size: 0.9em;
 }
 }
@@ -791,7 +792,7 @@ padding-left: 2vw;
 	height: 80vh;
 	flex-wrap: wrap;
 }
-#bigText{
+.bigText{
 	font-size: 0.8em;
 }
 }
@@ -988,8 +989,11 @@ height: 40vh;
 h1{
 	font-size: 1.1em;
 }
-#bigText{
+.bigText{
 	font-size: 0.8em;
+}
+.veryBigText{
+	font-size: 0.7em;
 }
 }
 
@@ -1164,6 +1168,12 @@ height: 40vh;
  }
 h1{
 	font-size: 1.1em;
+}
+.bigText{
+	font-size: 0.8em;
+}
+.veryBigText{
+	font-size: 0.55em;
 }
 
 }

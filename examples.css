@@ -82,6 +82,9 @@ p{
 .tab-link a{
   text-decoration: none;
 }
+.tab-link{
+  cursor: pointer;
+}
 
 
 
@@ -271,7 +274,7 @@ align-items: center;
 }
 .docInfo>img{
 	height: 25vh;
-	margin-right: 3vw;
+	margin-left: 3vw;
 }
 #map{
 	height: 100%;
@@ -462,7 +465,7 @@ align-items: center;
 }
 .docInfo>img{
 	height: 25vh;
-	margin-right: 3vw;
+	margin-left: 3vw;
 }
 #map{
 	height: 100%;
@@ -673,7 +676,7 @@ align-items: center;
 }
 .docInfo>img{
 	height: 25vh;
-	margin-right: 3vw;
+	margin-left: 3vw;
 }
 #map{
 	height: 100%;
@@ -901,7 +904,7 @@ align-items: center;
 }
 .docInfo>img{
 	height: 25vh;
-	margin-right: 3vw;
+	margin-left: 3vw;
 }
 #map{
 	height: 100%;
@@ -1137,10 +1140,10 @@ align-items: center;
 
 .docInfo>span{
 font-size: 1.2em;
-width: 60vw;
+width: 50vw;
 }
 .docInfo>img{
-	height: 15vh;
+	height: 20vh;
 	margin-left: 5vw;
 }
 #map{
@@ -1352,10 +1355,10 @@ align-items: center;
 
 .docInfo>span{
 font-size: 1.1em;
-width: 60vh;
+width: 50vh;
 }
 .docInfo>img{
-	height: 15vh;
+	height: 20vh;
 	margin-left: 5vw;
 }
 #map{
